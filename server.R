@@ -11,7 +11,7 @@ function(input, output) {
   download.file(url, destfile = temp_file, model = "wb")
   
   # membaca model
-  model <- load_model_hdf5(temp_file)  
+  model <- load_model_hdf5("finalmodel.h5")  
   
   # meng-convert image to array
   image_prep <- function(x) {
